@@ -1,0 +1,204 @@
+.heading {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.section_accordion {
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.collapse {
+  overflow: hidden;
+  transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity, height;
+  will-change: opacity, contents;
+}
+.collapse:not(.is-active) {
+  height: 0;
+  opacity: 0;
+}
+
+.accordion {
+  --background: #f3f3f3;
+  --border-radius: 12px;
+  border-radius: var(--border-radius);
+  /* background: var(--background); */
+  background-color: #123c61;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.075);
+  border: 1px solid #d9d9d9;
+  padding: 20px;
+}
+.accordion .card {
+  overflow: hidden;
+  margin: -1px -1px 1px;
+  /* background: var(--background); */
+  background-color: #eee2dc;
+  border: 1px solid #d9d9d9;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: contents;
+  text-align: left;
+}
+.accordion .card:first-child {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+.accordion .card:last-child {
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  margin-bottom: -1px;
+}
+.accordion .card:not(:last-child):not(.is-active) {
+  border-bottom-color: transparent;
+}
+.accordion .card.is-active {
+  background: whitesmoke;
+  border-radius: var(--border-radius);
+}
+.is-active-title {
+  color: white;
+}
+.accordion .card.is-active + .card {
+  border-top-color: transparent;
+}
+.accordion .card__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 3.5rem;
+  margin: 0;
+  margin-bottom: -1px;
+  padding: 0.5rem 1.25rem;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.accordion .card__title:hover .icon {
+  opacity: 0.8;
+}
+.accordion .card__title.is-active .icon {
+  transform: rotateX(180deg);
+  opacity: 1;
+}
+.accordion .card__title .icon {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+  opacity: 0.3;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: -0.25rem;
+}
+.accordion .card__content {
+  padding: 0 1.25rem 1.25rem;
+}
+
+.contact-page {
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: none;
+  text-align: center;
+  font-family: cursive;
+  width: 90%;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: 2px dotted #ac3b61;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #ac3b61(0, 0, 0, 0.3);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  display: inline-block;
+  align-items: center;
+  color: black;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  width: 100px;
+  font-size: large;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  background-color: black;
+  font-style: italic;
+  text-align: center;
+  background-color: #ffdddd;
+  width: 300px;
+}
+
+.copy-email {
+  width: fit-content;
+}
+
+#send-email {
+  background-color: #ac3b61;
+  color: white;
+  padding: 12px 30px;
+  margin-top: 20px;
+  align-self: flex-start;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#send-email:hover {
+  background-color: #123c69;
+  color: white;
+}
+
+.contact-heading {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.error-message {
+  position: absolute;
+  display: none;
+  background-color: #ac3b61;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+input:invalid:not(:focus) + .error-message {
+  display: none;
+}
+
+form:invalid .error-message {
+  display: inline-block;
+}
+p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .section_accordion {
+    width: 95%;
+  }
+  .heading {
+    text-align: center;
+  }
+}

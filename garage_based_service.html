@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Mechanic</title>
+
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css" /> -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img id="logo" src="IMG/logo-removebg-preview.png" />
+        <nav>
+          <ul>
+            <a href="sign_in.html"><li>Sign in</li></a>
+            <a href="index.html"><li>Home</li></a>
+            <a href="service.html"><li>Services</li></a>
+            <a href="broker.html"><li>Broker</li></a>
+            <a href="#"><li>Career</li></a>
+            <a href="aboutus.html"><li>About Us</li></a>
+            <a href="contact us page.html"><li>Contact Us</li></a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <img
+        src="IMG/garage-05.jpg"
+        class="background_img"
+        alt="Media Not Found"
+      />
+      <form
+        action="response.html"
+        method="get"
+        name="reservation_form"
+        id="reservation_form"
+      >
+        <div id="home_booking" class="home_booking" name="home_booking">
+          <div id="cust_details" class="cust_details">
+            <table>
+              <caption>
+                <h2>Book Your Appointment</h2>
+              </caption>
+              <tr>
+                <td>Name</td>
+                <td>
+                  <input
+                    type="text"
+                    id="txt_name"
+                    class="txt_name"
+                    name="txt_name"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>
+                  <input
+                    type="email"
+                    id="txt_mail"
+                    class="txt_mail"
+                    name="txt_mail"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Phone Number</td>
+                <td>
+                  <input
+                    type="number"
+                    id="num_ph"
+                    class="num_ph"
+                    name="num_ph"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Car Type</td>
+                <td>
+                  <select>
+                    <option>Sedan</option>
+                    <option>Coupe</option>
+                    <option>Station Wagon</option>
+                    <option>Hatchback</option>
+                    <option>SUV</option>
+                    <option>Truck</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Car Number</td>
+                <td>
+                  <input
+                    type="text"
+                    id="num_car"
+                    class="num_car"
+                    name="num_car"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Select Garage</td>
+                <td>
+                  <select>
+                    <option>Kitchener</option>
+                    <option>Waterloo</option>
+                    <option>Cambridge</option>
+                    <option>Stratford</option>
+                    <option>Brampton</option>
+                  </select>
+                </td>
+              </tr>
+              <tr id="services_chk" class="services_chk">
+                <td>Services</td>
+                <td>
+                  <input type="checkbox" id="slct_service" />Reaparing
+                  <input type="checkbox" id="slct_service" />Painting
+                  <input type="checkbox" id="slct_service" />Detailing
+                  <input type="checkbox" id="slct_service" />Tire Alignment
+                  <input type="checkbox" id="slct_service" />Oil Changing<br /><input
+                    type="checkbox"
+                    id="slct_service"
+                  />Car Wash <input type="checkbox" id="slct_service" />General
+                  Services
+                </td>
+              </tr>
+              <tr>
+                <td>Payment Method</td>
+                <td>
+                  <select>
+                    <option>Card</option>
+                    <option>Interac</option>
+                    <option>Cash</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="div_time" id="div_time" name="div_time">
+            <table>
+              <caption>
+                <h2>Select Date And Time</h2>
+              </caption>
+              <tr>
+                <td>Select Date</td>
+                <td>
+                  <input type="date" id="datepicker" class="datepicker" />
+                </td>
+              </tr>
+              <tr>
+                <td>Select Time</td>
+                <td>
+                  <select>
+                    <option>8:00 AM</option>
+                    <option>10:00 AM</option>
+                    <option>12:00 PM</option>
+                    <option>2:00 PM</option>
+                    <option>4:00 PM</option>
+                    <option>6:00 PM</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <input
+                    type="submit"
+                    name="btn_submit"
+                    id="btn_submit"
+                    class="btn_submit"
+                  />
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer class="gb-footer">
+      <div class="quick_links">
+        <nav>
+          <ul>
+            <a href="sign_in.html"><li>Sign in</li></a>
+            <a href="index.html"><li>Home</li></a>
+            <a href="service.html"><li>Services</li></a>
+            <a href="broker.html"><li>Broker</li></a>
+            <a href="aboutus.html"><li>About Us</li></a>
+            <a href="contact us page.html"><li>Contact Us</li></a>
+          </ul>
+        </nav>
+      </div>
+      <div class="contact_us">
+        <ul>
+          <li><h3>Contact Us</h3></li>
+          <li>Phone No: +91 9426101249</li>
+          <li>Email: askquestion@flexmachenic.com</li>
+        </ul>
+      </div>
+      <div class="wrk_hours">
+        <ul>
+          <li><h3>Working Hours</h3></li>
+          <li>Monday - Friday:&nbsp; 9:00 AM TO 10:00 PM</li>
+          <li>Weekends: &nbsp; Closed</li>
+          <li>Note: &nbsp; Store will be closed on festivals.</li>
+        </ul>
+      </div>
+      <div class="follow_us">
+        <ul>
+          <li><h3>Follow Us</h3></li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+          <li>Facebook</li>
+          <li>Linkdin</li>
+        </ul>
+      </div>
+      <div class="follow_us">
+        <ul>
+          <li><h3>Payment Method</h3></li>
+          <li>Interac</li>
+          <li>Credit/Debit Cards</li>
+          <li>Cash</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

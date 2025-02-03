@@ -1,0 +1,767 @@
+/* Home page css */
+body {
+  margin: 0;
+}
+header {
+  background-color: #123c69;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: auto;
+  padding: 0 10px;
+}
+
+/*slider */
+.img_slider {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  border: none;
+}
+
+.bxslider li img {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  background-attachment: fixed;
+  filter: brightness(0.5);
+}
+
+.img_slider h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  text-align: center;
+  font-size: 40px;
+  width: 450px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: block;
+  margin-left: 600px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: lavender;
+  font-size: large;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+nav a:hover {
+  font-size: large;
+  color: #ac3b61;
+}
+#logo {
+  width: 150px;
+  height: 80px;
+}
+footer {
+  display: flex;
+  font-weight: bold;
+  color: #eee2dc;
+  font-size: medium;
+  background-color: #123c69;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+footer ul {
+  list-style: none;
+  padding: 5px 0px 10px 0px;
+}
+footer a {
+  color: #eee2dc;
+  font-size: medium;
+}
+footer h3 {
+  color: #eee2dc;
+}
+footer div {
+  padding-left: 100px;
+  justify-content: space-between;
+}
+#img_desc {
+  width: 1600px;
+  height: 500px;
+}
+main {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.desc {
+  display: flex;
+  height: 500px;
+}
+
+#p_desc {
+  position: absolute;
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  margin-left: 280px;
+}
+#btn_Read {
+  background-color: #ac3b61;
+  color: white;
+  font-weight: bold;
+  margin-top: 40px;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#btn_Read:hover {
+  background-color: #123c69;
+  color: white;
+  height: 35px;
+  width: 110px;
+}
+img.background {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 500px;
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(3px);
+}
+#home_based_img {
+  width: 100%;
+  border-radius: 5px;
+}
+#Garage_based_img {
+  height: 400.88px;
+  width: 100%;
+  border-radius: 5px;
+}
+#home_based_img {
+  width: 100%;
+  border-radius: 5px;
+}
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #ac3b61;
+}
+.hd_service {
+  margin-left: 15px;
+  text-align: center;
+  margin-top: 35px;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+.services {
+  /* height: ; */
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 6%;
+  display: inline-flex;
+  border: none;
+  padding-bottom: 20px;
+}
+.Home_based {
+  width: 700px;
+  background-color: #eee2dc;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.Garage_based {
+  width: 700px;
+  margin-left: 85px;
+  background-color: #eee2dc;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+#P_home_based {
+  padding-top: 0px;
+  text-align: center;
+}
+#btn_services {
+  font-weight: bold;
+  background-color: #ac3b61;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#btn_services:hover {
+  background-color: #123c69;
+  color: white;
+  height: 35px;
+  width: 110px;
+}
+
+#img_review {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  padding-left: 5px;
+}
+
+#p_review_person {
+  display: inline-flex;
+}
+
+.name {
+  margin-top: 13px;
+}
+
+.review_sec {
+  display: inline-flex;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  margin-left: 5%;
+}
+.review_1 {
+  width: 700px;
+  background-color: lightgrey;
+  margin-left: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+#p_review_dec_1 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 0px 5px 30px 5px;
+}
+
+.review_2 {
+  width: 700px;
+  background-color: lightgrey;
+  margin-left: 85px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+#p_review_dec_2 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 0px 5px 30px 5px;
+}
+
+/* service page css */
+
+#services_home {
+  margin-top: 30px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+#services_home h1 {
+  text-align: center;
+}
+
+#all_home_serv,
+.garage_based {
+  display: inline-flex;
+  margin-left: 7%;
+  /* width: 1400px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+
+#img_alin,
+#img_repair,
+#img_painting,
+#img_wash {
+  width: 275px;
+  height: 183px;
+  border-radius: 5px;
+}
+#s_title {
+  color: #123c69;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#div_paint,
+#div_wash,
+#div_repair,
+#div_alin {
+  border-radius: 5px;
+  background-color: #eee2dc;
+  text-align: center;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 275px;
+  height: 489px;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+#services_garage {
+  margin-top: 30px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+#services_garage h1 {
+  text-align: center;
+}
+
+#btn_home_srv,
+#btn_garage_srv {
+  /* margin-top: ; */
+  text-align: center;
+  margin-left: 45%;
+  font-weight: bold;
+  background-color: #ac3b61;
+  color: white;
+  margin-top: 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 200px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#btn_home_srv:hover {
+  background-color: #123c69;
+  color: white;
+}
+#btn_garage_srv:hover {
+  background-color: #123c69;
+  color: white;
+}
+/* home_booking css*/
+#dialog {
+  display: none;
+}
+
+img.background_img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(3px) brightness(50%);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.home_booking {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  color: white;
+  display: inline-flex;
+  margin-left: 400px;
+  border-image: url("IMG/garage-05.jpg") 30 round;
+  border-width: 2px;
+  border-style: solid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 800px;
+}
+
+.home_booking td {
+  padding-top: 10px;
+}
+
+.home_booking input {
+  padding-top: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px black;
+}
+.home_booking table {
+  padding: 0px 20px 20px 20px;
+}
+.home_booking h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+/*about us page css*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.d1 {
+  text-align: center;
+  margin-top: 20px;
+  background-image: url("/IMG/garage.jpg");
+  height: 100px;
+  border-style: inset;
+  border-color: #ac3b61;
+  color: #123c69;
+}
+.d1 h1 {
+  margin-top: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 300%;
+}
+
+.d2 p {
+  line-height: 1.5;
+  color: #123c69;
+  padding: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.d2 h3 {
+  color: #ac3b61;
+  padding: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.d3 {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.d3 h2 {
+  margin: 0px;
+  padding: 10px;
+  border-style: inset;
+  border-color: #ac3b61;
+  color: #123c69;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  border-style: dotted;
+  border-color: #ac3b61;
+  margin-bottom: 20px;
+}
+.team img {
+  flex: 0 50%;
+  max-width: 50%;
+  height: auto;
+  opacity: 1;
+  margin-left: 30px;
+}
+.team_info {
+  padding: 30px;
+}
+.team_info h4 {
+  font-size: 25px;
+  margin: 20px 0px;
+  color: #ac3b61;
+}
+.team_info p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 15px 0px;
+  color: #123c69;
+}
+.read_more {
+  display: inline-block;
+
+  border-radius: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 5px 5px;
+  cursor: pointer;
+  color: white;
+  background-color: #ac3b61;
+}
+.read_more:hover {
+  background-color: #123c69;
+  color: white;
+}
+/* Home Basesd Services and Garage Based */
+img.background_img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(3px) brightness(50%);
+}
+.home_booking {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  color: white;
+  display: inline-flex;
+  margin-left: 400px;
+  border-image: url("IMG/garage-05.jpg") 30 round;
+  border-width: 2px;
+  border-style: solid;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.home_booking td {
+  padding-top: 10px;
+}
+
+.home_booking input {
+  padding-top: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 1px 1px black;
+}
+.home_booking table {
+  padding: 0px 20px 20px 20px;
+}
+.home_booking h2 {
+  color: white;
+  font-weight: 900;
+}
+.gb-footer {
+  margin-top: 10%;
+}
+.hb-footer {
+  margin-top: 10%;
+}
+
+/* broker page */
+.heading {
+  text-align: center;
+  margin-top: 30px;
+}
+.heading-text {
+  border-bottom: 2px solid black;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 4;
+  margin: 5em 5em;
+}
+.card {
+  border-radius: 2em;
+  max-width: 405px;
+  box-shadow: 5px 5px 5px 5px grey;
+  padding: 1em 1em;
+  margin-bottom: 3em;
+}
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.carImage {
+  max-width: 100%;
+  border-radius: 1em;
+}
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0.7em;
+  margin: 5px 0 0 0;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.year {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ac3b61;
+  border-radius: 2em;
+  padding: 0 1.3em;
+}
+.description {
+  padding: 0px 0.7em;
+}
+.description1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em 0 2em;
+  width: 100%;
+}
+.description2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  width: 100%;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2em 1em 2em;
+  width: 100%;
+}
+.rent-btn {
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  background-color: #ac3b61;
+  color: white;
+}
+.btn_submit {
+  width: 85px;
+  height: 25px;
+  padding-bottom: 22px;
+  background: #123c69;
+  color: white;
+}
+.btn_submit:hover {
+  background: #ac3b61;
+}
+
+/* banner */
+.home {
+  margin: auto;
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  background: url(../IMG/Background-home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+}
+.home-text {
+  padding-left: 60px;
+}
+.home-text h1 {
+  font-size: 2.4rem;
+  color: black;
+}
+.home-text span {
+  color: #ac3b61;
+}
+.home-text p {
+  font-size: 0.938rem;
+  font-weight: 300;
+  margin: 0.5rem 0 1.2rem;
+}
+.btn {
+  padding: 10px 22px;
+  background: #ac3b61;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+/* media Query */
+@media (max-width: 768px) {
+  header nav ul {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .services {
+    display: block;
+    margin-left: 4.5%;
+  }
+
+  .Garage_based {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .review_sec {
+    display: block;
+    margin-left: 0px;
+  }
+  .review_1 {
+    margin: auto;
+  }
+  .review_2 {
+    margin: auto;
+  }
+  .review_3 {
+    margin: auto;
+  }
+  .review_4 {
+    margin: auto;
+  }
+  footer div {
+    padding-left: 20px;
+    padding-right: 9px;
+  }
+  #all_home_serv,
+  .garage_based {
+    display: block;
+    margin-left: 9%;
+    padding-top: 20px;
+    border-radius: 5px;
+    padding-bottom: 0px;
+  }
+  #div_paint,
+  #div_wash,
+  #div_repair,
+  #div_alin {
+    width: 70%;
+    margin-bottom: 5%;
+    height: 400px;
+    padding: 10px;
+  }
+  #btn_home_srv,
+  #btn_garage_srv {
+    margin-left: 37%;
+    margin-top: 0px;
+  }
+  #all_home_serv {
+    padding-bottom: 0;
+  }
+  .home_booking {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-weight: bold;
+    color: white;
+    display: inline-flex;
+    margin-left: 5%;
+    border-image: url("IMG/garage-05.jpg") 30 round;
+    border-width: 2px;
+    border-style: solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 90%;
+  }
+  .gb-footer {
+    margin-top: 0;
+  }
+  .hb-footer {
+    margin-top: 0;
+  }
+}
